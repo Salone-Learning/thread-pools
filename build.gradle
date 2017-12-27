@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    maven {
+      url "https://repository.jboss.org/nexus/content/repositories/thirdparty-releases/"
+    }
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+}
+
+configurations {
+}
+
+jar {
+    baseName = 'thread-pools'
+    version =  '1.0.0'
+}
